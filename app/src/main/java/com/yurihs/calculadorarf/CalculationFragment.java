@@ -9,7 +9,6 @@ import android.widget.EditText;
 
 import com.nex3z.togglebuttongroup.SingleSelectToggleGroup;
 
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
 

@@ -1,7 +1,6 @@
 package com.yurihs.calculadorarf;
 
 import android.app.Activity;
-import android.content.Context;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
