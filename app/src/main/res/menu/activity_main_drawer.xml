@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/navigation_group_calculations"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_eirp"
+            android:icon="@drawable/ic_rss_feed_black_24dp"
+            android:title="@string/title_eirp" />
+
+        <item
+            android:id="@+id/navigation_fsl"
+            android:icon="@drawable/ic_trending_down_black_24dp"
+            android:title="@string/title_fsl" />
+
+        <item
+            android:id="@+id/navigation_budget"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/title_budget" />
+
+        <item
+            android:id="@+id/navigation_tx_rate_nyquist"
+            android:icon="@drawable/ic_network_check_black_24dp"
+            android:title="@string/title_tx_rate_nyquist" />
+        <item
+            android:id="@+id/navigation_tx_rate_shannon"
+            android:icon="@drawable/ic_network_check_black_24dp"
+            android:title="@string/title_tx_rate_shannon" />
+
+        <item
+            android:id="@+id/navigation_fresnel"
+            android:icon="@drawable/ic_leak_add_black_24dp"
+            android:title="@string/title_fresnel" />
+
+    </group>
+
+    <group
+        android:id="@+id/navigation_group_extra"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/title_about" />
+    </group>
+
+</menu>

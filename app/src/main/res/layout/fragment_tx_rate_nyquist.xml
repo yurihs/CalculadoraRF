@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TxRateNyquistFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:layout_marginBottom="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bandwidth_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_tx_rate_nyquist_bandwidth"
+                    android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/bandwidth_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tbgCheckedButton="@+id/frequency_unit_kilohertz">
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_freq_hertz"
+                    android:textSize="@dimen/unit_toggle_textsize"
+                    app:tbgMarkerColor="@color/colorAccent" />
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/frequency_unit_kilohertz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_freq_kilohertz"
+                    android:textSize="@dimen/unit_toggle_textsize"
+                    app:tbgMarkerColor="@color/colorAccent" />
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:baselineAligned="false">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/levels_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_tx_rate_nyquist_levels"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/result_colon"
+                android:textSize="@dimen/result_textsize"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/result_tx_rate_nyquist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_tx_rate_nyquist"
+                android:textSize="@dimen/result_textsize"
+                android:layout_gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

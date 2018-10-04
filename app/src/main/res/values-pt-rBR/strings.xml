@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora RF</string>
+    <string name="title_fsl">FSL</string>
+    <string name="title_eirp">EIRP</string>
+    <string name="title_budget">Link Budget</string>
+    <string name="title_tx_rate_nyquist">Taxa de TX (Nyquist)</string>
+    <string name="title_fresnel">Zona de Fresnel</string>
+    <string name="edit_fsl_distance">Distância</string>
+    <string name="edit_fsl_freq">Frequência</string>
+    <string name="unit_freq_megahertz">MHz</string>
+    <string name="unit_freq_gigahertz">GHz</string>
+    <string name="unit_distance_meter">m</string>
+    <string name="unit_distance_kilometer">km</string>
+    <string name="result_fsl">%1$.2f dB</string>
+    <string name="edit_fresnel_distance_a_b">Distância (de A até B)</string>
+    <string name="edit_fresnel_distance_a_o">Distância (de A até o obstáculo)</string>
+    <string name="edit_fresnel_frequency">Frequência</string>
+    <string name="calculate_button">Calcular</string>
+    <string name="result_fresnel">%1$.2f m</string>
+    <string name="result_colon">Resultado:</string>
+    <string name="error_distance_negative">Distâncias devem ser positivas</string>
+    <string name="error_frequency_negative">Frequências devem ser positivas</string>
+    <string name="error_value_required">Este valor é requerido</string>
+    <string name="error_distance_zero">Esta distância não pode ser zero</string>
+    <string name="error_frequency_zero">Esta frequência não pode ser zero</string>
+    <string name="error_obstacle_distance_greater_than_total">Esta distância deve ser menor do que a distância total</string>
+    <string name="result_eirp">%1$.2f dBm</string>
+    <string name="unit_power_milliwatt">mW</string>
+    <string name="unit_power_dbm">dBm</string>
+    <string name="edit_eirp_transmitter_power">Potência do transmissor</string>
+    <string name="edit_eirp_antenna_gain">Ganho da antena (dBi)</string>
+    <string name="edit_eirp_cable_and_connector_loss">Perda de cabos e conectores (dB)</string>
+    <string name="error_power_zero">A potência não pode ser zero</string>
+    <string name="error_power_negative">Potências devem ser positivas</string>
+    <string name="error_gain_zero">Este ganho não pode ser zero</string>
+    <string name="error_gain_negative">O ganho deve ser positivo</string>
+    <string name="error_positive_decibel_zero">Este valor não pode ser zero</string>
+    <string name="error_positive_decibel_negative">Este valor deve ser positivo</string>
+    <string name="send_to_budget_button">Enviar para Link Budget</string>
+    <string name="edit_budget_transmitter_eirp">EIRP do transmissor (dBm)</string>
+    <string name="edit_budget_fsl">FSL (dB)</string>
+    <string name="edit_budget_antenna_gain">Ganho da antena (dBi)</string>
+    <string name="edit_budget_cable_and_connector_loss">Perda de cabos e conectores (dB)</string>
+    <string name="result_budget">%1$.2f dBm</string>
+    <string name="result_tx_rate_nyquist">%1$.2f %2$s</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="unit_freq_kilohertz">kHz</string>
+    <string name="edit_tx_rate_nyquist_bandwidth">Largura de banda</string>
+    <string name="edit_tx_rate_nyquist_levels">Número de níveis do sinal</string>
+    <string name="error_levels_zero">O número de níveis não pode ser zero</string>
+    <string name="error_levels_negative">O número de níveis deve ser positivo</string>
+    <string name="unit_freq_hertz">Hz</string>
+    <string name="result_tx_rate_shannon">%1$.2f %2$s</string>
+    <string name="title_tx_rate_shannon">Taxa de TX (Shannon)</string>
+    <string name="edit_tx_rate_shannon_bandwidth">Largura de Banda</string>
+    <string name="unit_snr_decibel">dB</string>
+    <string name="unit_snr_watt">W</string>
+    <string name="edit_tx_rate_shannon_snr">Relação sinal-ruído</string>
+    <string name="navigation_title">Cálculos</string>
+    <string name="title_about">Sobre</string>
+    <string name="about_description">Este aplicativo busca auxiliar no cálculo dos parâmetros
+        operacionais de redes sem fio, através de interfaces de fácil utilização para
+        algumas das fórmulas envolvidas neste processo.
+        \n\nEle foi desenvolvido por <a href="https://yurihs.com/">yurihs</a> para a disciplina
+        de redes sem fio do Bacharelado em Sistemas de Informação
+        do <a href="https://araquari.ifc.edu.br/">IFC Araquari</a>.
+    </string>
+</resources>

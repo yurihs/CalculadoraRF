@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_padding">20dp</dimen>
+    <dimen name="unit_toggle_textsize">15sp</dimen>
+    <dimen name="result_textsize">21sp</dimen>
+    <dimen name="input_spacing">10dp</dimen>
+</resources>

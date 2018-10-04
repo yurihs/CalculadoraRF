@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_padding"
+    tools:context=".EIRPFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:layout_marginBottom="@dimen/input_spacing">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/transmitter_power_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_eirp_transmitter_power"
+                    android:inputType="number|numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/transmitter_power_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tbgCheckedButton="@+id/power_unit_milliwatt">
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/power_unit_milliwatt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_power_milliwatt"
+                    android:textSize="@dimen/unit_toggle_textsize"
+                    app:tbgMarkerColor="@color/colorAccent" />
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_power_dbm"
+                    android:textSize="@dimen/unit_toggle_textsize"
+                    app:tbgMarkerColor="@color/colorAccent" />
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:baselineAligned="false"
+            android:layout_marginBottom="@dimen/input_spacing">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/antenna_gain_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:hint="@string/edit_eirp_antenna_gain" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:baselineAligned="false">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cable_and_connector_loss_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:hint="@string/edit_eirp_cable_and_connector_loss" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/result_colon"
+                android:textSize="@dimen/result_textsize"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/result_eirp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_eirp"
+                android:textSize="@dimen/result_textsize"
+                android:layout_gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/send_to_budget_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_to_budget_button"
+            android:enabled="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Calculadora RF</string>
+    <string name="title_fsl">FSL</string>
+    <string name="title_eirp">EIRP</string>
+    <string name="title_budget">Link Budget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="edit_fsl_distance">Distance</string>
+    <string name="edit_fsl_freq">Frequency</string>
+    <string name="unit_freq_megahertz">MHz</string>
+    <string name="unit_freq_gigahertz">GHz</string>
+    <string name="unit_distance_meter">m</string>
+    <string name="unit_distance_kilometer">km</string>
+    <string name="result_fsl">%1$.2f dB</string>
+    <string name="edit_fresnel_distance_a_b">Distance (A to B)</string>
+    <string name="edit_fresnel_distance_a_o">Distance (A to obstacle)</string>
+    <string name="edit_fresnel_frequency">Frequency</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="result_fresnel">%1$.2f m</string>
+    <string name="result_colon">Result:</string>
+    <string name="title_fresnel">Fresnel Zone</string>
+    <string name="error_distance_negative">Distances must be positive</string>
+    <string name="error_frequency_negative">Frequencies must be positive</string>
+    <string name="error_value_required">This value is required</string>
+    <string name="error_distance_zero">This distance can\'t be zero</string>
+    <string name="error_frequency_zero">This frequency can\'t be zero</string>
+    <string name="error_obstacle_distance_greater_than_total">This distance must be less than the total distance</string>
+    <string name="result_eirp">%1$.2f dBm</string>
+    <string name="edit_eirp_transmitter_power">Transmitter power</string>
+    <string name="unit_power_milliwatt">mW</string>
+    <string name="unit_power_dbm">dBm</string>
+    <string name="edit_eirp_antenna_gain">Antenna gain (dBi)</string>
+    <string name="edit_eirp_cable_and_connector_loss">Loss from cables and connectors (dB)</string>
+    <string name="error_power_zero">This power value can\'t be zero</string>
+    <string name="error_gain_zero">This gain value can\'t be zero</string>
+    <string name="error_gain_negative">Gain values must be positive</string>
+    <string name="error_power_negative">Power values must be positive</string>
+    <string name="error_positive_decibel_zero">This value can\'t be zero</string>
+    <string name="error_positive_decibel_negative">This value must be positive</string>
+    <string name="send_to_budget_button">Send to Link Budget</string>
+    <string name="edit_budget_antenna_gain">Antenna gain (dBi)</string>
+    <string name="edit_budget_cable_and_connector_loss">Loss from cables and connectors (dB)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="edit_budget_transmitter_eirp">Transmitter EIRP (dBm)</string>
+    <string name="edit_budget_fsl">FSL (dB)</string>
+    <string name="result_budget">%1$.2f dBm</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="result_tx_rate_nyquist">%1$.2f %2$s</string>
+    <string name="result_tx_rate_shannon">%1$.2f %2$s</string>
+    <string name="title_tx_rate_nyquist">TX Rate (Nyquist)</string>
+    <string name="title_tx_rate_shannon">TX Rate (Shannon)</string>
+    <string name="unit_freq_kilohertz">kHz</string>
+    <string name="edit_tx_rate_nyquist_bandwidth">Bandwidth</string>
+    <string name="edit_tx_rate_shannon_bandwidth">Bandwidth</string>
+    <string name="error_levels_zero">The number of levels can\'t be zero</string>
+    <string name="error_levels_negative">The number of levels must be positive</string>
+    <string name="unit_freq_hertz">Hz</string>
+    <string name="edit_tx_rate_nyquist_levels">Number of levels</string>
+    <string name="unit_snr_decibel">dB</string>
+    <string name="unit_snr_watt">W</string>
+    <string name="edit_tx_rate_shannon_snr">Signal-to-noise ratio</string>
+    <string name="navigation_title">Calculations</string>
+    <string name="title_about">About</string>
+    <string name="about_description">This app aims to help you when calculating the operational
+        parameters of wireless networks, by providing easy to use interfaces for some equations
+        involved in that process.
+        \n\nIt was developed by <a href="https://yurihs.com/">yurihs</a> for a
+        wireless networking class, as a part of the Information Systems undergraduate course
+        at <a href="https://araquari.ifc.edu.br/">IFC Araquari</a>.
+    </string>
+</resources>
