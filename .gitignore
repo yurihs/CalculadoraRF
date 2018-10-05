@@ -107,3 +107,5 @@ fabric.properties
 
 
 .idea/*
+
+app/release/output.json
