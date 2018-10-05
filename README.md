@@ -1,3 +1,5 @@
+![Logo do projeto](https://github.com/yurihs/calculadorarf/blob/master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png?raw=true)
+
 # Calculadora RF
 
 > _An Android that calculates parameters for the operation of radio frequency equipment._
