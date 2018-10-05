@@ -2,7 +2,7 @@
 
 # Calculadora RF
 
-> _An Android that calculates parameters for the operation of radio frequency equipment._
+> _An Android app that calculates parameters for the operation of radio frequency equipment._
 
 _This app aims to help you calculate the operational parameters of wireless networks,
 by providing easy to use interfaces for some equations involved in that process._
