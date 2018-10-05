@@ -68,13 +68,6 @@ public class FresnelFragment extends CalculationFragment implements View.OnClick
 
         Resources res = getResources();
 
-        if (distance_a_o_value > distance_a_b_value) {
-            distance_a_o_layout.setError(res.getString(R.string.error_obstacle_distance_greater_than_total));
-            distance_a_o_layout.setErrorEnabled(true);
-            return;
-        } else {
-            distance_a_o_layout.setErrorEnabled(false);
-        }
 
         if (distance_a_b_unit == R.id.distance_a_b_unit_meter) {
             distance_a_b_value /= 1000;
@@ -84,6 +77,14 @@ public class FresnelFragment extends CalculationFragment implements View.OnClick
         }
         if (frequency_unit == R.id.frequency_unit_gigahertz) {
             frequency_value *= 1000;
+        }
+
+        if (distance_a_o_value > distance_a_b_value) {
+            distance_a_o_layout.setError(res.getString(R.string.error_obstacle_distance_greater_than_total));
+            distance_a_o_layout.setErrorEnabled(true);
+            return;
+        } else {
+            distance_a_o_layout.setErrorEnabled(false);
         }
 
         Double distance_b_o_value = distance_a_b_value - distance_a_o_value;
