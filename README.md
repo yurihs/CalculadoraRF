@@ -1,4 +1,4 @@
-![Logo do projeto](https://github.com/yurihs/calculadorarf/blob/master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png?raw=true)
+![Logo do projeto](https://github.com/yurihs/calculadorarf/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png?raw=true)
 
 # Calculadora RF
 
