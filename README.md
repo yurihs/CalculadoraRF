@@ -24,8 +24,8 @@ do [IFC Araquari](https://araquari.ifc.edu.br/).
 
 ## Instalação
 
-Para instalar o aplicativo no seu dispositivo, você pode baixar o APK mais recente da aba
-Releases. Após obter o arquivo, certifique-se de [habilitar a instalação de aplicativos fora do
+Para instalar o aplicativo no seu dispositivo, você pode baixar o APK mais recente da página
+[Releases](https://github.com/yurihs/calculadorarf/releases). Após obter o arquivo, certifique-se de [habilitar a instalação de aplicativos fora do
 Google Play (fontes desconhecidas)](https://seletronic.com.br/noticias/android/sistema-android/como-instalar-aplicativos-de-fontes-desconhecidas-no-android-apk/)
 antes de instalá-lo. 
 
